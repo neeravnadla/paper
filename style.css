@@ -38,39 +38,17 @@ body .nav .logo {
   font-size: 1.5em;
 }
 
-body .subnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .subnav .colorfeed {
+body .colorfeed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0px;
 }
 
-body .subnav .colorfeed .coloroption {
+body .colorfeed .coloroption {
   width: 50px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
-}
-
-body .subnav .tools {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 10px;
-}
-
-body .subnav .tools .tool {
-  width: 50px;
-  height: 50px;
 }
 
 body .feed {
@@ -114,18 +92,53 @@ body .addnew #newmsg {
   font-family: "Poppins", sans-serif;
   background-color: #ffddb0;
   border: transparent;
-  font-size: 1.2em;
+  font-size: 24px;
   height: 60vh;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   outline: none;
   color: #666;
   resize: none;
   font-weight: 400;
 }
 
+body .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 10px;
+}
+
+body .tools .tool {
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1px;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .design {
-  padding: 10px 0;
+  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,11 +172,11 @@ body .design .author > a:hover {
     width: 40px;
     height: 40px;
   }
-  body .tool {
-    display: none;
-  }
   body .feed .card {
     width: 100%;
+  }
+  body .design {
+    padding: 15px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,30 +27,17 @@ body {
     }
   }
 
-  .subnav {
-    display: flex;
-
     .colorfeed { 
       display: flex;
       gap: 0px;
       .coloroption {
         width: 50px;
-        height: 50px;
+        height: 40px;
         cursor: pointer;
       }
     }
 
-    .tools {
-     
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      .tool {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  }
+   
 
   .feed {
     display: none;
@@ -83,10 +70,10 @@ body {
       font-family: "Poppins", sans-serif;
       background-color: #ffddb0;
       border: transparent;
-      font-size: 1.2em;
+      font-size: 24px;
       height:60vh;
       width: 100%;
-      padding: 15px;
+      padding: 10px;
       outline: none;
       color: #666;
       
@@ -94,9 +81,33 @@ body {
       font-weight: 400;
     }
   }
+
+   .tools {
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      
+      gap: 10px;
+      .tool {
+           cursor: pointer;
+      //  border: 1px solid #222;
+         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1px;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
   .design{
   
- padding: 10px 0;
+ padding: 5px 0;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -127,14 +138,16 @@ body {
       }
     }
 
-    .tool{
-      display: none;
-    }
+    
 
     .feed {
       .card {
         width: 100%;
       }
+    }
+
+    .design{
+      padding: 15px 0;
     }
   }
 }

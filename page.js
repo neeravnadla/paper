@@ -11,4 +11,58 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector("#newmsg").style.backgroundColor = eid;
     } ; 
 });
+
+
+document.querySelector("#clear").addEventListener("click", ()=>{
+
+    document.querySelector("#newmsg").value = "";
+});     
 });
+
+
+
+document.querySelector("#fontplush").addEventListener("click", ()=>{
+
+    fontsize("plus")
+
+});     
+
+document.querySelector("#fontminus").addEventListener("click", ()=>{
+
+    fontsize("minus")
+
+});   
+
+function fontsize(button){
+
+    if (button === "plus"){
+
+        let p = document.querySelector("#fontplush");
+     let m = document.querySelector("#fontminus");
+
+    let s = Number(p.dataset.fs) + 2;
+
+    document.querySelector("#newmsg").style.fontSize = s+"px";
+
+    p.dataset.fs = s;
+    m.dataset.fs = s;
+
+    }
+    
+    if(button === "minus"){
+
+        
+    let p = document.querySelector("#fontplush");
+    let m = document.querySelector("#fontminus");
+
+    let s = Number(p.dataset.fs) - 2;
+
+    document.querySelector("#newmsg").style.fontSize = s+"px";
+
+    p.dataset.fs = s;
+    m.dataset.fs = s;
+
+    }
+
+    
+}
