@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 20vw;
+  font-size: 16px;
+
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0 0 0;
+    .logo {
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+  }
+
+  .subnav {
+    display: flex;
+
+    .colorfeed { 
+      display: flex;
+      gap: 0px;
+      .coloroption {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+
+    .tools {
+     
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      .tool {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .feed {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      width: 40%;
+      background-color: rgb(255, 215, 163);
+      color: rgb(148, 96, 28);
+      border-radius: 20px;
+      font-weight: 300;
+      gap: 10px;
+      .by {
+        text-align: right;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .addnew {
+    background-color: #ffddb0;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    #newmsg {
+      font-family: "Poppins", sans-serif;
+      background-color: #ffddb0;
+      border: transparent;
+      font-size: 1.2em;
+      height:60vh;
+      width: 100%;
+      padding: 15px;
+      outline: none;
+      color: #666;
+      
+      resize: none;
+      font-weight: 400;
+    }
+  }
+  .design{
+  
+ padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+ .author>a{
+   font-weight: 600;
+   padding-left:5px ;
+   cursor: pointer;
+   color: rgb(240, 106, 106);
+        text-decoration: none;
+   &:hover{
+     color: rgb(255, 193, 60);
+   }
+ }
+}
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 10px;
+
+
+
+    .colorfeed {
+      .coloroption {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .tool{
+      display: none;
+    }
+
+    .feed {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
