@@ -71,9 +71,3 @@ function updateFirst(event) {
     p.style.color = event.target.value;
   }
 }
-
-function watchColorPicker(event) {
-  document.querySelectorAll("#newmsg").forEach(function(p) {
-    p.style.color = event.target.value;
-  });
-}

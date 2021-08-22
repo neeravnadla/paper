@@ -37,38 +37,15 @@ body {
       }
     }
 
-   
-
-  .feed {
-    display: none;
-    flex-wrap: wrap;
-    gap: 5px;
-    .card {
-      display: flex;
-      flex-direction: column;
-      padding: 15px;
-      width: 40%;
-      background-color: rgb(255, 215, 163);
-      color: rgb(148, 96, 28);
-      border-radius: 20px;
-      font-weight: 300;
-      gap: 10px;
-      .by {
-        text-align: right;
-        text-transform: capitalize;
-      }
-    }
-  }
-
   .addnew {
-    background-color: #ffddb0;
+    background-color: #eeeeee;
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     #newmsg {
       font-family: "Poppins", sans-serif;
-      background-color: #ffddb0;
+      background-color: #eeeeee;
       border: transparent;
       font-size: 24px;
       height:60vh;

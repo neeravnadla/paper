@@ -51,37 +51,8 @@ body .colorfeed .coloroption {
   cursor: pointer;
 }
 
-body .feed {
-  display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 5px;
-}
-
-body .feed .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 15px;
-  width: 40%;
-  background-color: #ffd7a3;
-  color: #94601c;
-  border-radius: 20px;
-  font-weight: 300;
-  gap: 10px;
-}
-
-body .feed .card .by {
-  text-align: right;
-  text-transform: capitalize;
-}
-
 body .addnew {
-  background-color: #ffddb0;
+  background-color: #eeeeee;
   border-radius: 5px;
   padding: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -90,7 +61,7 @@ body .addnew {
 
 body .addnew #newmsg {
   font-family: "Poppins", sans-serif;
-  background-color: #ffddb0;
+  background-color: #eeeeee;
   border: transparent;
   font-size: 24px;
   height: 60vh;
