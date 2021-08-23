@@ -1,4 +1,6 @@
 
+// letter paper color
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // load channel buttons    
@@ -11,6 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector("#newmsg").style.backgroundColor = eid;
     } ; 
 });
+
+
+// paper color button action
+
+var colorPage;
+var defaultPaper = "#666";
+
+window.addEventListener("load", startup, false);
+function startup() {
+
+  colorPage = document.querySelector("#papercolor");
+  colorPage.value = defaultPaper;
+  colorPage.addEventListener("input", update, false);
+  
+}
+
+function update(event) {
+   var b = document.querySelector(".addnew");
+  var p = document.querySelector("#newmsg");
+ 
+
+  if (p) {
+    p.style.backgroundColor = event.target.value;
+    b.style.backgroundColor = event.target.value;
+  }
+}
+
+
+
 
 
 
@@ -71,3 +102,6 @@ function updateFirst(event) {
     p.style.color = event.target.value;
   }
 }
+
+
+

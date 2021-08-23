@@ -93,7 +93,7 @@ body .tools .tool {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1px;
   border-radius: 5px;
-  min-width: 40px;
+  width: 40px;
   height: 40px;
   font-size: 1.5em;
   background-color: #eee;
@@ -110,15 +110,6 @@ body .tools .tool {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-body .tools .tool #textcolor {
-  width: 30px;
-  margin: 0 5px;
-}
-
-body .tools .tool #spa {
-  padding: 0 5px;
 }
 
 body .design {

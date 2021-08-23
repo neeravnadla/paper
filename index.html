@@ -21,16 +21,24 @@
     </div>
 
     <div class="colorfeed">
+      <input
+        type="color"
+        name="coloroption"
+        class="coloroption"
+        id="papercolor"
+        title="Paper Color"
+        value="#555"
+      />
       <div class="coloroption" id="c1" data-dcolor="#ffddb0"></div>
       <div class="coloroption" id="c2" data-dcolor="#a2a2ff"></div>
       <div class="coloroption" id="c3" data-dcolor="#f399ff"></div>
       <div class="coloroption" id="c4" data-dcolor="#95fffa"></div>
       <div class="coloroption" id="c5" data-dcolor="#7effb0"></div>
-      <div class="coloroption" id="c6" data-dcolor="#222"></div>
-      <div class="coloroption" id="c7" data-dcolor="#eeeeee"></div>
-    </div>
 
-    
+      <div class="coloroption" id="c6" data-dcolor="#ff7171"></div>
+      <div class="coloroption" id="c7" data-dcolor="#222"></div>
+      <div class="coloroption" id="c8" data-dcolor="#eeeeee"></div>
+    </div>
 
     <div class="addnew">
       <textarea
@@ -43,13 +51,17 @@
     </div>
 
     <div class="tools">
-      <div class="tool" id="fontcolor" title="Font color" ><input type="color" name="fontcolor" id="textcolor" ><span id="spa">A</span></div>
-      <div class="tool" id="fontminus" title="Font Size" data-fs="24">A-</div>
-      <div class="tool" id="fontplush" title="Font Size" data-fs="24">A+</div>
+  
+        
+        <div class="tool" id="fontstyle" title="Font Style">A</div>
+        <input class="tool" type="color" name="fontcolor" id="fontcolor" title="Font Color" value="#666" />
+        <div class="tool" id="fontminus" title="Font Size" data-fs="24">-</div>
+        <div class="tool" id="fontplush" title="Font Size" data-fs="24">+</div>
+ 
+
       <div class="tool" title="Take a Screenshot">📸</div>
       <div class="tool" id="shot" title="Save as PDF">💾</div>
-      <div class="tool" id="clear" title="Clear">❌</div>
-      
+      <div class="tool" id="clear" title="Clear All">❌</div>
     </div>
 
     <div class="design">
