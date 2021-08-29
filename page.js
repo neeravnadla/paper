@@ -104,4 +104,13 @@ function updateFirst(event) {
 }
 
 
-
+document.querySelector("#copy").addEventListener('click',()=>{
+   let copyText= document.querySelector("#newmsg").value;
+    if(copyText===""){
+      alert("paper is empty");
+    }
+    else{
+    navigator.clipboard.writeText(copyText);
+    alert("Text Copied");
+    }
+});
