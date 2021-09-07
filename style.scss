@@ -6,11 +6,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
 body {
   margin: 0 20vw;
   font-size: 16px;
 // background: linear-gradient(130deg, rgb(218, 230, 255), rgb(242, 255, 205), rgb(255, 223, 223));
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   height: 100vh;
 
   display: flex;
@@ -46,7 +51,7 @@ body {
 
 
     #newmsg {
-      font-family: "Poppins", sans-serif;
+      font-family: Poppins;
       background-color: #eeeeee;
       border: transparent;
       font-size: 24px;

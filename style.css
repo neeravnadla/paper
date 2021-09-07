@@ -7,10 +7,15 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
 body {
   margin: 0 20vw;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +66,7 @@ body .addnew {
 }
 
 body .addnew #newmsg {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   background-color: #eeeeee;
   border: transparent;
   font-size: 24px;
