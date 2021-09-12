@@ -75,7 +75,7 @@ body .addnew #newmsg {
   padding: 10px;
   outline: none;
   color: #666;
-  resize: vertical;
+  resize: none;
   font-weight: 400;
 }
 

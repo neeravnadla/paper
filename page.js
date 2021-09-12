@@ -1,3 +1,7 @@
+import autosize from "./autosize.js";
+
+autosize(document.querySelector('textarea'));
+
 
 // letter paper color
 
@@ -157,10 +161,11 @@ function download(s) {
 // resize page
 
 
-textarea = document.querySelector("#newmsg");
-textarea.addEventListener('input', autoResize, false);
+// textarea = document.querySelector("#newmsg");
+// textarea.addEventListener('input', autoResize, false);
 
-function autoResize() {
+// function autoResize() {
 
-  this.style.height = this.scrollHeight + 'px';
-}
+//   this.style.height = this.scrollHeight + 'px';
+// }
+

@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
 
     <link rel="stylesheet" href="style.css" />
-    <script src="dom-to-image.js"></script>
+
     <title>Paper</title>
   </head>
   <body>
@@ -41,28 +40,29 @@
         name="newmsg"
         id="newmsg"
         cols="30"
-       
         placeholder="Tap here to write a letter"
-
-        oninput="this.parentNode.dataset.value = this.value" rows="10"
+        oninput="this.parentNode.dataset.value = this.value"
+        rows="10"
       ></textarea>
     </div>
 
     <div class="tools">
-  
-        
-        <div class="tool" id="fontstyle" title="Font Style">A</div>
-        <input class="tool" type="color" name="fontcolor" id="fontcolor" title="Font Color" value="#666" />
-        <div class="tool" id="fontminus" title="Font Size" data-fs="24">-</div>
-        <div class="tool" id="fontplush" title="Font Size" data-fs="24">+</div>
- 
+      <div class="tool" id="fontstyle" title="Font Style">A</div>
+      <input
+        class="tool"
+        type="color"
+        name="fontcolor"
+        id="fontcolor"
+        title="Font Color"
+        value="#666"
+      />
+      <div class="tool" id="fontminus" title="Font Size" data-fs="24">-</div>
+      <div class="tool" id="fontplush" title="Font Size" data-fs="24">+</div>
 
       <div class="tool" id="copy" title="Copy Text">✂️</div>
       <div class="tool" id="shot" title="Save as Image">💾</div>
       <div class="tool" id="clear" title="Clear All">❌</div>
     </div>
-
-    
 
     <div class="design">
       🎨 design by<span class="author"
@@ -72,7 +72,7 @@
       </span>
     </div>
 
-    <script src="page.js"></script>
-    
+    <script src="dom-to-image.js"></script>
+    <script src="./page.js"  type="module"></script>
   </body>
 </html>
