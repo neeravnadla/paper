@@ -91,6 +91,28 @@ body {
       }
     }
 
+    .tip{
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+        text-align: center;
+    
+      a {
+        display: flex;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0 5px;
+        cursor: pointer;
+        color: #15c39a;
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(255, 193, 60);
+        }
+      }
+    }
+
   .design{
   
  padding: 5px 0;

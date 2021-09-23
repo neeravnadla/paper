@@ -10,7 +10,6 @@
 @font-face {
   font-family: Poppins;
   src: url(Poppins/Poppins-Regular.ttf);
-  font-display: swap;
 }
 
 body {
@@ -117,6 +116,37 @@ body .tools .tool {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+body .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+body .tip a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 5px;
+  cursor: pointer;
+  color: #15c39a;
+  text-decoration: none;
+}
+
+body .tip a:hover {
+  color: #ffc13c;
 }
 
 body .design {
