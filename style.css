@@ -4,12 +4,85 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: Poppins;
+  font-family: Black-Italic;
+  src: url(Poppins/Poppins-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Bold;
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Bold-Italic;
+  src: url(Poppins/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: ExtraBold;
+  src: url(Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: ExtraBold-Italic;
+  src: url(Poppins/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: ExtraLight;
+  src: url(Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: ExtraLight-Italic;
+  src: url(Poppins/Poppins-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: Italic;
+  src: url(Poppins/Poppins-Italic.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Light-Italic;
+  src: url(Poppins/Poppins-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Medium;
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Medium-Italic;
+  src: url(Poppins/Poppins-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Regular;
   src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: SemiBold-Italic;
+  src: url(Poppins/Poppins-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Thin;
+  src: url(Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: Thin-Italic;
+  src: url(Poppins/Poppins-ThinItalic.ttf);
 }
 
 body {
@@ -23,8 +96,8 @@ body {
   gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 body .nav {
@@ -32,8 +105,8 @@ body .nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 30px;
   padding: 10px 0 0 0;
 }
@@ -61,12 +134,13 @@ body .addnew {
   background-color: #eeeeee;
   border-radius: 5px;
   padding: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .addnew #newmsg {
-  font-family: Poppins;
+  font-family: Regular;
   background-color: #eeeeee;
   border: transparent;
   font-size: 20px;
@@ -85,18 +159,19 @@ body .tools {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   gap: 10px;
 }
 
 body .tools .tool {
   cursor: pointer;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1px;
   border-radius: 5px;
   width: 40px;
@@ -107,15 +182,15 @@ body .tools .tool {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 body .tip {
@@ -123,13 +198,13 @@ body .tip {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -155,13 +230,13 @@ body .design {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 body .design .author > a {

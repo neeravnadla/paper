@@ -1,23 +1,20 @@
 import autosize from "./autosize.js";
 
-autosize(document.querySelector('textarea'));
-
+autosize(document.querySelector("textarea"));
 
 // letter paper color
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  // load channel buttons    
-  document.querySelectorAll(".coloroption").forEach(element => {
+document.addEventListener("DOMContentLoaded", () => {
+  // load channel buttons
+  document.querySelectorAll(".coloroption").forEach((element) => {
     let e = element;
     element.style.backgroundColor = element.dataset.dcolor;
     e.onclick = () => {
-      let eid = document.getElementById(e.id).dataset.dcolor;;
+      let eid = document.getElementById(e.id).dataset.dcolor;
       document.querySelector(".addnew").style.backgroundColor = eid;
       document.querySelector("#newmsg").style.backgroundColor = eid;
     };
   });
-
 
   // paper color button action
 
@@ -26,17 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("load", startup, false);
   function startup() {
-
     colorPage = document.querySelector("#papercolor");
     colorPage.value = defaultPaper;
     colorPage.addEventListener("input", update, false);
-
   }
 
   function update(event) {
     var b = document.querySelector(".addnew");
     var p = document.querySelector("#newmsg");
-
 
     if (p) {
       p.style.backgroundColor = event.target.value;
@@ -44,30 +38,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
-
-
-
-
   // clear text button
 
   document.querySelector("#clear").addEventListener("click", () => {
     document.querySelector("#newmsg").value = "";
     document.querySelector("#newmsg").style.height = "60vh";
-
   });
 });
 
+// change the font face
+document
+  .querySelector("#fontstyle")
+  .addEventListener("click", changeFontFamily);
 
 // text resize button
 
-document.querySelector("#fontplush").addEventListener("click", () => { fontsize("plus") });
-document.querySelector("#fontminus").addEventListener("click", () => { fontsize("minus") });
+document.querySelector("#fontplush").addEventListener("click", () => {
+  fontsize("plus");
+});
+document.querySelector("#fontminus").addEventListener("click", () => {
+  fontsize("minus");
+});
 
 function fontsize(button) {
-
   if (button === "plus") {
-
     let p = document.querySelector("#fontplush");
     let m = document.querySelector("#fontminus");
     let s = Number(p.dataset.fs) + 2;
@@ -77,7 +71,6 @@ function fontsize(button) {
   }
 
   if (button === "minus") {
-
     let p = document.querySelector("#fontplush");
     let m = document.querySelector("#fontminus");
     let s = Number(p.dataset.fs) - 2;
@@ -94,11 +87,9 @@ var defaultColor = "#666";
 
 window.addEventListener("load", startup, false);
 function startup() {
-
   colorWell = document.querySelector("#fontcolor");
   colorWell.value = defaultColor;
   colorWell.addEventListener("input", updateFirst, false);
-
 }
 
 function updateFirst(event) {
@@ -109,57 +100,45 @@ function updateFirst(event) {
   }
 }
 
+// copy text from paper
 
-// copy text from paper 
-
-document.querySelector("#copy").addEventListener('click', () => {
+document.querySelector("#copy").addEventListener("click", () => {
   let copyText = document.querySelector("#newmsg").value;
   if (copyText === "") {
     alert("paper is empty");
-  }
-  else {
+  } else {
     navigator.clipboard.writeText(copyText);
     alert("Text Copied");
   }
 });
 
-// save as image 
+// save as image
 
-document.querySelector("#shot").addEventListener('click', () => {
-  var node = document.querySelector('.addnew');
+document.querySelector("#shot").addEventListener("click", () => {
+  var node = document.querySelector(".addnew");
 
-  domtoimage.toPng(node)
+  domtoimage
+    .toPng(node)
     .then(function (dataUrl) {
-
       download(dataUrl);
-
     })
     .catch(function (error) {
-      console.error('oops, something went wrong!', error);
+      console.error("oops, something went wrong!", error);
     });
-
-
-
 });
-
-
-
 
 // download pic
 
 function download(s) {
-  const link = document.createElement('a');
+  const link = document.createElement("a");
   link.href = s;
-  link.setAttribute('download', 'image.jpg');
+  link.setAttribute("download", "image.jpg");
   document.body.appendChild(link);
   link.click();
   link.remove();
 }
 
-
-
 // resize page
-
 
 // textarea = document.querySelector("#newmsg");
 // textarea.addEventListener('input', autoResize, false);
@@ -169,3 +148,27 @@ function download(s) {
 //   this.style.height = this.scrollHeight + 'px';
 // }
 
+function changeFontFamily() {
+  const fontFamily = [
+    "Black-Italic",
+    "Bold",
+    "Bold-Italic",
+    "ExtraBold",
+    "ExtraBold-Italic",
+    "ExtraLight",
+    "ExtraLight-Italic",
+    "Italic",
+    "Light",
+    "Light-Italic",
+    "Medium",
+    "Medium-Italic",
+    "Regular",
+    "SemiBold",
+    "SemiBold-Italic",
+    "Thin",
+    "Thin-Italic",
+  ];
+
+  document.querySelector("#newmsg").style.fontFamily =
+    fontFamily[Math.floor(Math.random() * fontFamily.length)];
+}
