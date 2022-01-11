@@ -31,6 +31,9 @@ body .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -39,9 +42,41 @@ body .nav {
 }
 
 body .nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   font-size: 1.3em;
   color: rgba(0, 0, 0, 0.9);
+}
+
+body .nav .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 5px;
 }
 
 body .colorfeed {
@@ -118,22 +153,43 @@ body .tools .tool {
           flex-direction: row;
 }
 
-body .tip {
+body footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto 0;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body footer .tip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  font-size: 0.8em;
 }
 
-body .tip a {
+body footer .tip a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,26 +201,26 @@ body .tip a {
   text-decoration: none;
 }
 
-body .tip a:hover {
+body footer .tip a:hover {
   color: #ffc13c;
 }
 
-body .design {
-  padding: 5px 0;
+body footer .design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  font-size: 1em;
 }
 
-body .design .author > a {
+body footer .design .author > a {
   font-weight: 600;
   padding-left: 5px;
   cursor: pointer;
@@ -172,7 +228,7 @@ body .design .author > a {
   text-decoration: none;
 }
 
-body .design .author > a:hover {
+body footer .design .author > a:hover {
   color: #ffc13c;
 }
 
@@ -186,9 +242,6 @@ body .design .author > a:hover {
   }
   body .feed .card {
     width: 100%;
-  }
-  body .design {
-    padding: 15px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

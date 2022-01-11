@@ -14,7 +14,6 @@
 body {
   margin: 0 20vw;
   font-size: 16px;
-// background: linear-gradient(130deg, rgb(218, 230, 255), rgb(242, 255, 205), rgb(255, 223, 223));
   font-family: Poppins;
   height: 100vh;
 
@@ -23,13 +22,30 @@ body {
   flex-direction: column;
   .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
     padding: 10px 0 0 0;
     .logo {
+
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
       font-weight: 500;
       font-size: 1.3em;
       color: rgba(0,0,0,.9);
+    }
+
+    .support {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 5px;
+
     }
   }
 
@@ -75,7 +91,7 @@ body {
       gap: 10px;
       .tool {
            cursor: pointer;
-      //  border: 1px solid #222;
+     
          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 1px ;
         border-radius: 5px;
@@ -91,35 +107,46 @@ body {
       }
     }
 
-    .tip{
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
-        text-align: center;
-    
-      a {
-        display: flex;
-        font-size: 1em;
-        font-weight: 600;
-        padding: 0 5px;
-        cursor: pointer;
-        color: #15c39a;
-        text-decoration: none;
+   footer{ 
+     width: 100%;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    justify-content: space-around;
+    margin: auto 0;   
+   
+  gap: 10px;
+    flex-wrap: wrap;
 
-        &:hover {
-          color: rgb(255, 193, 60);
-        }
-      }
-    }
-
-  .design{
-  
- padding: 5px 0;
+.tip {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 0.8em;
+
+  a {
+    display: flex;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #15c39a;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(255, 193, 60);
+    }
+  }
+}
+
+  .design{
+  display: flex;
+justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
+  font-size: 1em;
  .author>a{
    font-weight: 600;
    padding-left:5px ;
@@ -130,6 +157,10 @@ body {
      color: rgb(255, 193, 60);
    }
  }
+
+}
+
+
 }
 }
 
@@ -154,8 +185,8 @@ body {
       }
     }
 
-    .design{
-      padding: 15px 0;
-    }
+    
+
+    
   }
 }
